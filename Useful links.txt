@@ -1,0 +1,12 @@
+
+
+BOOK: Cryptography & Network Security by Behrouz A. Forouzan
+
+https://crypto.stackexchange.com
+
+STUDY MATERIAL: 
+https://www.khanacademy.org/computing/computer-science/cryptography/
+
+https://engineering.purdue.edu/kak/compsec/Lectures.html
+
+itsecuritylabs.com/news/
