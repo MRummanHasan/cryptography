@@ -1,5 +1,5 @@
 #
-# @ author : M Rumman Khan
+# Created by M Rumman Khan
 # Project : Ceaser Cipher
 #
 str =  input("Enter Plain text to encrypt : ")

@@ -1,9 +1,7 @@
 #
+# Created By M Rumman Khan
+# Project : Affine Cipher
 #
-#
-#
-#
-
 
 
 str = input("Enter text to encrypt : ")

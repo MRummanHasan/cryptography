@@ -1,5 +1,5 @@
 #
-# @ author : M Rumman Khan
+# Created By M Rumman Khan
 # Project : Multiplicative Cipher
 #
 import os
