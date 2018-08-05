@@ -7,14 +7,25 @@ import os
 
 
 # Ceaser Cipher
+import time,datetime
+
+
 def ceaserCipher():
+	
 	str = input("Enter Plain text to encrypt : ")
+	start = time.time()
 	k = -2
 	ct = ""
 	for i in str:
 		o = ord(i)
 		ct = ct + chr(o + k)
 	print("encrypted text: " + ct)
+	
+	end = time.time()
+	print(start)
+	print(end)
+	print(end - start)
+
 
 
 # def egcd(a, b):
@@ -23,7 +34,7 @@ def ceaserCipher():
 #     else:
 #         g, y, x = egcd(b % a, a)
 #         return (g, x - (b // a) * y, y)
-#
+
 # def modinv(a, m):
 #     g, x, y = egcd(a, m)
 #     if g != 1:
@@ -33,24 +44,27 @@ def ceaserCipher():
 #
 # Multiplicative Cipher
 def MultiCipher():
-	str = input("Enter Plain Text to Manipulate : ")
-	k = 7  # Key
-	ct = ""  # Cipher Text initial
-	c = ""
-	for i in str:
-		o = ord(i) - 65  # ASCII manipulation
-		c = chr(((o * k) % 26) + 65)
-		ct = ct + c
-	print("Encrypted : " + ct)
+	if True:
+		str = input("Enter text to encrypt : ")
+		k = 7  # Key
+		ct = ""  # Cipher Text initial
+		c = ""
+		for i in str:
+			o = ord(i) - 65  # ASCII manipulation
+			c = chr(((o * k) % 26) + 65)
+			ct = ct + c
+		print(ct)
 	
-	invk = 15  # inverse of Key i.e. 7
-	ct = ""
-	c = ""
-	for i in str:
-		o = ord(i) - 65
-		c = chr(((o * invk) % 26) + 65)
-		ct = ct + c
-	print("Decrypted : " + ct)
+	if True:
+		# str = input("Enter text to decrypt : ")
+		invk = 15  # inverse of Key i.e. 7
+		ct = ""
+		c = ""
+		for i in str:
+			o = ord(i) - 65
+			c = chr(((o * invk) % 26) + 65)
+			ct = ct + c
+		print("decrypted: " + ct)
 
 def affineCipher():
 	# Affine Cipher
